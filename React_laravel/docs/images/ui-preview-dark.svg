@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    </style>
+    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="cardGradDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="860" fill="#09090b"/>
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(40, 30)" filter="url(#shadow)">
+    <!-- Window Frame -->
+    <rect width="1120" height="800" rx="14" fill="#0c0d0e" stroke="#27272a" stroke-width="1.5"/>
+
+    <!-- Window Titlebar -->
+    <rect width="1120" height="44" rx="14" fill="#18181b"/>
+    <rect y="30" width="1120" height="14" fill="#18181b"/>
+    <line x1="0" y1="44" x2="1120" y2="44" stroke="#27272a" stroke-width="1"/>
+
+    <!-- Traffic Lights -->
+    <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="22" r="6" fill="#f59e0b"/>
+    <circle cx="64" cy="22" r="6" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="240" y="9" width="640" height="26" rx="6" fill="#09090b" stroke="#27272a"/>
+    <text x="560" y="26" fill="#a1a1aa" font-size="12" class="font-mono" text-anchor="middle">http://localhost:3000 — Dens | Web Developer</text>
+    <circle cx="254" cy="22" r="3.5" fill="#22c55e"/>
+
+    <!-- Application Body -->
+    <g transform="translate(0, 44)">
+      <!-- App Header / Nav -->
+      <rect width="1120" height="60" fill="#09090b" opacity="0.95"/>
+      <line x1="0" y1="60" x2="1120" y2="60" stroke="#27272a" stroke-width="1"/>
+
+      <!-- Logo -->
+      <rect x="40" y="16" width="28" height="28" rx="4" fill="#000000" stroke="#ffffff" stroke-width="1.2"/>
+      <text x="54" y="35" fill="#ffffff" font-size="13" font-weight="bold" class="font-mono" text-anchor="middle">D</text>
+      <text x="78" y="35" fill="#ffffff" font-size="15" font-weight="800" class="font-sans" letter-spacing="1">DENS</text>
+
+      <!-- Nav Links -->
+      <text x="440" y="35" fill="#a1a1aa" font-size="13" class="font-sans">About</text>
+      <text x="510" y="35" fill="#ffffff" font-size="13" font-weight="600" class="font-sans">Projects</text>
+      <text x="590" y="35" fill="#a1a1aa" font-size="13" class="font-sans">Skills</text>
+      <text x="655" y="35" fill="#a1a1aa" font-size="13" class="font-sans">Contact</text>
+
+      <!-- Right Header Actions -->
+      <!-- Theme Toggle -->
+      <rect x="910" y="16" width="80" height="28" rx="5" fill="#18181b" stroke="#3f3f46"/>
+      <text x="950" y="34" fill="#e4e4e7" font-size="11" class="font-mono" text-anchor="middle">☀️ Light</text>
+
+      <!-- Contact Button -->
+      <rect x="1000" y="16" width="85" height="28" rx="5" fill="#09090b" stroke="#52525b"/>
+      <text x="1042" y="34" fill="#ffffff" font-size="11" font-weight="600" class="font-sans" text-anchor="middle">Contact Me</text>
+
+      <!-- Hero Section -->
+      <g transform="translate(40, 85)">
+        <!-- Badge -->
+        <rect x="0" y="0" width="190" height="24" rx="4" fill="#18181b" stroke="#27272a"/>
+        <circle cx="12" cy="12" r="3.5" fill="#22c55e"/>
+        <text x="24" y="16" fill="#d4d4d8" font-size="10.5" class="font-mono">Available for Web 2 Projects</text>
+
+        <!-- Main Title -->
+        <text x="0" y="60" fill="#ffffff" font-size="34" font-weight="800" class="font-sans" letter-spacing="-0.5">
+          Hi, I'm <tspan text-decoration="underline" fill="#ffffff">Dens</tspan>.
+        </text>
+        <text x="0" y="98" fill="#ffffff" font-size="34" font-weight="800" class="font-sans" letter-spacing="-0.5">
+          Web Developer.
+        </text>
+
+        <!-- Subtitle -->
+        <text x="0" y="130" fill="#a1a1aa" font-size="13.5" class="font-sans">
+          I build clean, simple, and high-performance web applications using React, Next.js, and Laravel.
+        </text>
+
+        <!-- CTA Buttons -->
+        <rect x="0" y="152" width="125" height="34" rx="5" fill="#ffffff"/>
+        <text x="62" y="173" fill="#000000" font-size="11" font-weight="700" class="font-sans" text-anchor="middle" letter-spacing="0.5">VIEW PROJECTS</text>
+
+        <rect x="135" y="152" width="115" height="34" rx="5" fill="#000000" stroke="#3f3f46"/>
+        <text x="192" y="173" fill="#ffffff" font-size="11" font-weight="600" class="font-sans" text-anchor="middle" letter-spacing="0.5">CONTACT ME</text>
+
+        <!-- Tech Stack Tags -->
+        <g transform="translate(0, 204)">
+          <line x1="0" y1="0" x2="1040" y2="0" stroke="#1f1f23" stroke-width="1"/>
+          <text x="0" y="24" fill="#71717a" font-size="10.5" font-weight="bold" class="font-mono">STACK:</text>
+          
+          <rect x="55" y="10" width="55" height="22" rx="4" fill="#09090b" stroke="#27272a"/>
+          <text x="82" y="25" fill="#e4e4e7" font-size="10" class="font-mono" text-anchor="middle">React</text>
+
+          <rect x="116" y="10" width="62" height="22" rx="4" fill="#09090b" stroke="#27272a"/>
+          <text x="147" y="25" fill="#e4e4e7" font-size="10" class="font-mono" text-anchor="middle">Next.js</text>
+
+          <rect x="184" y="10" width="62" height="22" rx="4" fill="#09090b" stroke="#27272a"/>
+          <text x="215" y="25" fill="#e4e4e7" font-size="10" class="font-mono" text-anchor="middle">Laravel</text>
+
+          <rect x="252" y="10" width="90" height="22" rx="4" fill="#09090b" stroke="#27272a"/>
+          <text x="297" y="25" fill="#e4e4e7" font-size="10" class="font-mono" text-anchor="middle">Tailwind CSS</text>
+
+          <rect x="348" y="10" width="45" height="22" rx="4" fill="#09090b" stroke="#27272a"/>
+          <text x="370" y="25" fill="#e4e4e7" font-size="10" class="font-mono" text-anchor="middle">PHP</text>
+
+          <rect x="399" y="10" width="55" height="22" rx="4" fill="#09090b" stroke="#27272a"/>
+          <text x="426" y="25" fill="#e4e4e7" font-size="10" class="font-mono" text-anchor="middle">SQLite</text>
+        </g>
+      </g>
+
+      <!-- Selected Work Section -->
+      <g transform="translate(40, 340)">
+        <text x="0" y="12" fill="#71717a" font-size="10" font-weight="600" class="font-mono">// PROJECTS</text>
+        <text x="0" y="34" fill="#ffffff" font-size="20" font-weight="700" class="font-sans">Selected Work</text>
+
+        <!-- Filter Tabs -->
+        <rect x="800" y="12" width="240" height="28" rx="5" fill="#09090b" stroke="#27272a"/>
+        <rect x="802" y="14" width="40" height="24" rx="4" fill="#ffffff"/>
+        <text x="822" y="30" fill="#000000" font-size="10" font-weight="bold" class="font-sans" text-anchor="middle">All</text>
+        <text x="872" y="30" fill="#a1a1aa" font-size="10" class="font-sans" text-anchor="middle">Full Stack</text>
+        <text x="935" y="30" fill="#a1a1aa" font-size="10" class="font-sans" text-anchor="middle">Frontend</text>
+        <text x="1005" y="30" fill="#a1a1aa" font-size="10" class="font-sans" text-anchor="middle">API</text>
+
+        <!-- Project Cards Grid -->
+        <!-- Card 1 -->
+        <g transform="translate(0, 50)">
+          <rect width="330" height="155" rx="8" fill="url(#cardGradDark)" stroke="#27272a" stroke-width="1.2"/>
+          <text x="18" y="28" fill="#71717a" font-size="9" font-weight="600" class="font-mono">FULL STACK</text>
+          <text x="18" y="48" fill="#ffffff" font-size="13.5" font-weight="700" class="font-sans">Laravel + React Application</text>
+          <text x="18" y="70" fill="#a1a1aa" font-size="10.5" class="font-sans">Full-stack Web 2 platform built with</text>
+          <text x="18" y="85" fill="#a1a1aa" font-size="10.5" class="font-sans">Laravel 11, Inertia.js, and React 19.</text>
+
+          <line x1="18" y1="110" x2="312" y2="110" stroke="#1f1f23"/>
+          <rect x="18" y="120" width="68" height="18" rx="3" fill="#000000" stroke="#27272a"/>
+          <text x="52" y="132" fill="#a1a1aa" font-size="9" class="font-mono" text-anchor="middle">Laravel 11</text>
+          <rect x="90" y="120" width="64" height="18" rx="3" fill="#000000" stroke="#27272a"/>
+          <text x="122" y="132" fill="#a1a1aa" font-size="9" class="font-mono" text-anchor="middle">React 19</text>
+
+          <text x="280" y="133" fill="#ffffff" font-size="10.5" class="font-mono">Link →</text>
+        </g>
+
+        <!-- Card 2 -->
+        <g transform="translate(355, 50)">
+          <rect width="330" height="155" rx="8" fill="url(#cardGradDark)" stroke="#27272a" stroke-width="1.2"/>
+          <text x="18" y="28" fill="#71717a" font-size="9" font-weight="600" class="font-mono">FRONTEND</text>
+          <text x="18" y="48" fill="#ffffff" font-size="13.5" font-weight="700" class="font-sans">TriviaForge Quiz Engine</text>
+          <text x="18" y="70" fill="#a1a1aa" font-size="10.5" class="font-sans">Custom trivia creator and leaderboard</text>
+          <text x="18" y="85" fill="#a1a1aa" font-size="10.5" class="font-sans">app with dynamic category filters.</text>
+
+          <line x1="18" y1="110" x2="312" y2="110" stroke="#1f1f23"/>
+          <rect x="18" y="120" width="58" height="18" rx="3" fill="#000000" stroke="#27272a"/>
+          <text x="47" y="132" fill="#a1a1aa" font-size="9" class="font-mono" text-anchor="middle">Next.js</text>
+          <rect x="80" y="120" width="50" height="18" rx="3" fill="#000000" stroke="#27272a"/>
+          <text x="105" y="132" fill="#a1a1aa" font-size="9" class="font-mono" text-anchor="middle">React</text>
+
+          <text x="280" y="133" fill="#ffffff" font-size="10.5" class="font-mono">Link →</text>
+        </g>
+
+        <!-- Card 3 -->
+        <g transform="translate(710, 50)">
+          <rect width="330" height="155" rx="8" fill="url(#cardGradDark)" stroke="#27272a" stroke-width="1.2"/>
+          <text x="18" y="28" fill="#71717a" font-size="9" font-weight="600" class="font-mono">BACKEND / API</text>
+          <text x="18" y="48" fill="#ffffff" font-size="13.5" font-weight="700" class="font-sans">RESTful Auth API</text>
+          <text x="18" y="70" fill="#a1a1aa" font-size="10.5" class="font-sans">Secure API server built with Laravel</text>
+          <text x="18" y="85" fill="#a1a1aa" font-size="10.5" class="font-sans">Fortify, Passkeys, JWT, and SQLite.</text>
+
+          <line x1="18" y1="110" x2="312" y2="110" stroke="#1f1f23"/>
+          <rect x="18" y="120" width="55" height="18" rx="3" fill="#000000" stroke="#27272a"/>
+          <text x="45" y="132" fill="#a1a1aa" font-size="9" class="font-mono" text-anchor="middle">Laravel</text>
+          <rect x="77" y="120" width="56" height="18" rx="3" fill="#000000" stroke="#27272a"/>
+          <text x="105" y="132" fill="#a1a1aa" font-size="9" class="font-mono" text-anchor="middle">PHP 8.3</text>
+
+          <text x="280" y="133" fill="#ffffff" font-size="10.5" class="font-mono">Link →</text>
+        </g>
+      </g>
+
+      <!-- Bottom Interactive Contact Preview -->
+      <g transform="translate(40, 570)">
+        <rect width="1040" height="160" rx="8" fill="#121215" stroke="#27272a"/>
+        
+        <!-- Left: Direct Contact Box -->
+        <g transform="translate(20, 20)">
+          <text x="0" y="15" fill="#ffffff" font-size="13" font-weight="700" class="font-sans">Direct Contact</text>
+          <rect x="0" y="28" width="320" height="42" rx="5" fill="#000000" stroke="#27272a"/>
+          <text x="12" y="44" fill="#71717a" font-size="9" class="font-mono">EMAIL</text>
+          <text x="12" y="58" fill="#ffffff" font-size="11.5" font-weight="600" class="font-mono">dens@gmail.com</text>
+          <rect x="250" y="36" width="58" height="24" rx="4" fill="#18181b" stroke="#3f3f46"/>
+          <text x="279" y="52" fill="#ffffff" font-size="10" class="font-sans" text-anchor="middle">Copy</text>
+
+          <!-- Inbox button -->
+          <rect x="0" y="80" width="320" height="34" rx="5" fill="#000000" stroke="#27272a"/>
+          <text x="140" y="101" fill="#ffffff" font-size="11" class="font-mono" text-anchor="middle">✉ Inbox / Messages</text>
+          <rect x="285" y="86" width="22" height="20" rx="4" fill="#ffffff"/>
+          <text x="296" y="100" fill="#000000" font-size="10" font-weight="bold" class="font-mono" text-anchor="middle">3</text>
+        </g>
+
+        <!-- Right: Message Form preview -->
+        <g transform="translate(370, 20)">
+          <text x="0" y="15" fill="#ffffff" font-size="13" font-weight="700" class="font-sans">Send A Direct Message</text>
+          
+          <rect x="0" y="28" width="310" height="30" rx="4" fill="#000000" stroke="#27272a"/>
+          <text x="12" y="47" fill="#71717a" font-size="10.5" class="font-sans">Your Name</text>
+
+          <rect x="325" y="28" width="325" height="30" rx="4" fill="#000000" stroke="#27272a"/>
+          <text x="337" y="47" fill="#71717a" font-size="10.5" class="font-sans">email@example.com</text>
+
+          <rect x="0" y="66" width="650" height="42" rx="4" fill="#000000" stroke="#27272a"/>
+          <text x="12" y="85" fill="#71717a" font-size="10.5" class="font-sans">Your message...</text>
+
+          <rect x="520" y="114" width="130" height="28" rx="4" fill="#ffffff"/>
+          <text x="585" y="132" fill="#000000" font-size="10.5" font-weight="700" class="font-sans" text-anchor="middle">SEND MESSAGE</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

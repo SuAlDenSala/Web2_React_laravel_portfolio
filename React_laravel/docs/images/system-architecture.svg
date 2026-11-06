@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    </style>
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="680" fill="#09090b"/>
+
+  <!-- Title & Subtitle -->
+  <text x="550" y="45" fill="#ffffff" font-size="24" font-weight="800" class="font-sans" text-anchor="middle">SYSTEM ARCHITECTURE OVERVIEW</text>
+  <text x="550" y="70" fill="#a1a1aa" font-size="13" class="font-sans" text-anchor="middle">Next.js Client-Facing Application + Laravel Inertia Backend Ecosystem</text>
+
+  <!-- Flow Boxes -->
+
+  <!-- 1. Client Tier (Browser) -->
+  <g transform="translate(60, 110)" filter="url(#shadowBox)">
+    <rect width="980" height="90" rx="10" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    <text x="30" y="32" fill="#38bdf8" font-size="12" font-weight="700" class="font-mono">CLIENT / USER LAYER</text>
+    <text x="30" y="58" fill="#ffffff" font-size="16" font-weight="700" class="font-sans">Modern Web Browser (Desktop / Tablet / Mobile Responsive)</text>
+    <text x="30" y="76" fill="#a1a1aa" font-size="12" class="font-sans">Interacts with Next.js Portfolio interface, Dark/Light theme toggle, Project filters, and Inertia SPA dashboard</text>
+  </g>
+
+  <!-- Down Arrows -->
+  <g transform="translate(300, 205)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4"/>
+    <polygon points="-5,35 5,35 0,45" fill="#38bdf8"/>
+    <text x="12" y="25" fill="#38bdf8" font-size="10" class="font-mono">:3000 HTTP</text>
+  </g>
+
+  <g transform="translate(800, 205)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#f43f5e" stroke-width="2" stroke-dasharray="4"/>
+    <polygon points="-5,35 5,35 0,45" fill="#f43f5e"/>
+    <text x="12" y="25" fill="#f43f5e" font-size="10" class="font-mono">:8000 / :5173</text>
+  </g>
+
+  <!-- 2. Application Services Tier -->
+  <!-- Left Box: Frontend (Next.js) -->
+  <g transform="translate(60, 255)" filter="url(#shadowBox)">
+    <rect width="460" height="370" rx="10" fill="#121215" stroke="#27272a" stroke-width="1.5"/>
+    <rect width="460" height="36" rx="10" fill="#1e1e24"/>
+    <rect y="26" width="460" height="10" fill="#1e1e24"/>
+    <text x="20" y="24" fill="#38bdf8" font-size="12" font-weight="700" class="font-mono">FRONTEND APP (React_laravel/frontend)</text>
+    
+    <!-- Next.js Details -->
+    <g transform="translate(20, 55)">
+      <text x="0" y="16" fill="#ffffff" font-size="15" font-weight="700" class="font-sans">Next.js 16 + React 19 Engine</text>
+      <text x="0" y="36" fill="#a1a1aa" font-size="11.5" class="font-sans">App Router architecture serving client-side components</text>
+
+      <rect x="0" y="52" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="72" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">🎨 Theme Engine</text>
+      <text x="14" y="90" fill="#a1a1aa" font-size="10.5" class="font-mono">State + localStorage persistence ('dens_theme')</text>
+
+      <rect x="0" y="114" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="134" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">📁 Dynamic Project Filter</text>
+      <text x="14" y="152" fill="#a1a1aa" font-size="10.5" class="font-mono">Real-time filtering: All, Full Stack, Frontend, API</text>
+
+      <rect x="0" y="176" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="196" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">✉ Contact Form &amp; Inbox System</text>
+      <text x="14" y="214" fill="#a1a1aa" font-size="10.5" class="font-mono">Client-side dispatch to localStorage ('dens_messages')</text>
+
+      <rect x="0" y="238" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="258" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">⚡ Tailwind CSS v4 Styling</text>
+      <text x="14" y="276" fill="#a1a1aa" font-size="10.5" class="font-mono">Modern utility-first styling with zero-runtime CSS</text>
+    </g>
+  </g>
+
+  <!-- Right Box: Backend (Laravel + Inertia) -->
+  <g transform="translate(580, 255)" filter="url(#shadowBox)">
+    <rect width="460" height="370" rx="10" fill="#121215" stroke="#27272a" stroke-width="1.5"/>
+    <rect width="460" height="36" rx="10" fill="#1e1e24"/>
+    <rect y="26" width="460" height="10" fill="#1e1e24"/>
+    <text x="20" y="24" fill="#f43f5e" font-size="12" font-weight="700" class="font-mono">BACKEND ECOSYSTEM (React_laravel/backend)</text>
+    
+    <!-- Laravel Details -->
+    <g transform="translate(20, 55)">
+      <text x="0" y="16" fill="#ffffff" font-size="15" font-weight="700" class="font-sans">Laravel 13 + PHP 8.5 Framework</text>
+      <text x="0" y="36" fill="#a1a1aa" font-size="11.5" class="font-sans">Robust MVC backend with Inertia.js protocol bridge</text>
+
+      <rect x="0" y="52" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="72" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">🔐 Laravel Fortify Auth &amp; Passkeys</text>
+      <text x="14" y="90" fill="#a1a1aa" font-size="10.5" class="font-mono">2FA Authentication, WebAuthn Passkeys, Sessions</text>
+
+      <rect x="0" y="114" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="134" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">👥 Multi-Tenant Team Management</text>
+      <text x="14" y="152" fill="#a1a1aa" font-size="10.5" class="font-mono">Invitations, RBAC roles, team switching &amp; slugs</text>
+
+      <rect x="0" y="176" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="196" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">⚡ Inertia.js v3 + React 19 Frontend</text>
+      <text x="14" y="214" fill="#a1a1aa" font-size="10.5" class="font-mono">No API boilerplate; server state directly hydrated</text>
+
+      <rect x="0" y="238" width="420" height="52" rx="6" fill="#18181b" stroke="#27272a"/>
+      <text x="14" y="258" fill="#ffffff" font-size="12" font-weight="600" class="font-sans">🗄 SQLite Database Storage</text>
+      <text x="14" y="276" fill="#a1a1aa" font-size="10.5" class="font-mono">database.sqlite: users, teams, passkeys, sessions, jobs</text>
+    </g>
+  </g>
+</svg>
